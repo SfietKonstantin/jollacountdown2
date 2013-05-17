@@ -164,4 +164,12 @@ Item {
             }
         }
     }
+
+    MouseArea {
+        anchors.fill: parent
+        onDoubleClicked: {
+            Twitter.load()
+            content.state = "hidden"
+        }
+    }
 }
