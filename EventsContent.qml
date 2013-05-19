@@ -42,7 +42,7 @@ Item {
     signal updateRequested()
 
     onUpdateRequested: {
-        var remainingMsecs = TimeComputer.remainingMsec(2013, 5, 20, 13, 30, 0)
+        var remainingMsecs = TimeComputer.remainingMsec(2013, 5, 20, 16, 30, 0)
         container.remainingDays = TimeComputer.remainingDays(remainingMsecs)
         container.remainingTime = TimeComputer.remainingTime(remainingMsecs)
     }
